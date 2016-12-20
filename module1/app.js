@@ -6,7 +6,7 @@
 
   function LunchCheckController($scope) {
     $scope.check = function() {
-      if($scope.lunchMenu == undefined || !($scope.lunchMenu.length)) {
+      if(!$scope.lunchMenu || 0 === $scope.lunchMenu.length) {
         $scope.result = "Please enter data first";
         $scope.alertStyle = "alert-info";
       }
