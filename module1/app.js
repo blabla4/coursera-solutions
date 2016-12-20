@@ -9,8 +9,7 @@
       if(!$scope.lunchMenu || 0 === $scope.lunchMenu.length) {
         $scope.result = "Please enter data first";
         $scope.alertStyle = "alert-info";
-      }
-      if($scope.lunchMenu.split(',').length > 3) {
+      } else if($scope.lunchMenu.split(',').length > 3) {
         $scope.result = "Too much!";
         $scope.alertStyle = "alert-danger";
       } else {
