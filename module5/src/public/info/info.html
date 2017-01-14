@@ -1,0 +1,17 @@
+
+<div ng-if="$ctrl.infos != null">
+First name : {{ $ctrl.infos.firstname }}<br />
+Last name : {{ $ctrl.infos.lastname }}<br />
+Email : {{ $ctrl.infos.email }}<br />
+Phone : {{ $ctrl.infos.phone }}<br />
+Favorite menu : <br />
+<menu-item menu-item="$ctrl.infos.fav">
+</menu-item>
+</div>
+<div ng-if="$ctrl.infos == null">Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></div>
+<br />
+<br />
+<br />
+<br />
+<i>Images are not showing up because I had no time to set up heroku, otherwise it is working as expected :)</i>
+
